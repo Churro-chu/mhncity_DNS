@@ -3,15 +3,448 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="한가지 사이트를 다양한 프레임워크를 통해 만들어 보는 포트폴리오 사이트입니다."/>
-    <meta name="keyword" content="포트폴리오, 리액트, 뷰, 넥스트, 웹스토리보이, portfolio, react.js, vue.js, next.js, webstoryboy" />
-    <title>포트폴리오 사이트 만들기 😇 Vite-Site</title>
-
-    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>noon AI DIS</title>
+    <link rel="stylesheet" href="./assets/state/css/main.css">
 </head>
+
 <body>
-    <h1>Vite 시작하기</h1>
-    <script type="module" src="assets/js/main.js"></script>
+
+<!-- 헤더 -->
+<header class="header">
+    <div class="header-inner">
+
+        <div class="logo">
+            <img src="" alt="DIS 로고 이미지">
+        </div>
+
+        <nav class="nav">
+            <a href="#">서비스 소개</a>
+            <a href="#">요금 안내</a>
+            <a href="#">사용 가이드</a>
+            <a href="#">고객 센터</a>
+        </nav>
+
+        <div class="user-area">
+            <div class="user-info">
+                <strong>mhncity님</strong>
+                <span>$999,975</span>
+            </div>
+
+            <button class="user-icon">
+                <img src="assets/state/img/user.svg" alt="아이콘1">
+            </button>
+
+            <button class="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+    </div>
+</header>
+
+
+<!-- 메인 -->
+<main>
+
+    <!-- 서비스 소개 -->
+    <section class="hero">
+
+        <div class="hero-inner">
+
+            <!-- 왼쪽 설명 -->
+            <div class="intro">
+
+                <div class="service-label">
+                    <img src="" alt="아이콘2">
+                    AI 기반 개인정보 비식별화 서비스
+                </div>
+
+                <h1>
+                    소중한 개인정보,<br>
+                    안전하게 <em>비식별화</em>하세요.
+                </h1>
+
+                <p class="intro-text">
+                    이미지와 영상 속 사람의 얼굴, 전신 및 차량 번호판을<br>
+                    AI가 자동으로 비식별 처리하여 개인정보를 보호합니다.
+                </p>
+
+
+                <!-- 특징 -->
+                <div class="features">
+
+                    <div class="feature">
+                        <div class="feature-icon">♢</div>
+
+                        <div>
+                            <strong>개인정보 보호</strong>
+                            <span>안전한 데이터 처리</span>
+                        </div>
+                    </div>
+
+
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <img src="assets/state/img/en.svg" alt="">
+                        </div>
+
+                        <div>
+                            <strong>간편한 사용</strong>
+                            <span>빠르고 쉬운 서비스</span>
+                        </div>
+                    </div>
+
+
+                    <div class="feature">
+                        <div class="feature-icon">✧</div>
+
+                        <div>
+                            <strong>정확한 비식별화</strong>
+                            <span>AI 기반 자동 처리</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- 오른쪽 서비스 카드 -->
+            <div class="service-list">
+
+                <!-- 이미지 -->
+                <div class="service-card image-card">
+
+                    <div class="service-content">
+
+                        <div class="media-icon image-icon">
+                            <img src="assets/state/img/picture.png" alt="아이콘">
+                            <b class="b">+</b>
+                        </div>
+
+                        <div class="service-info">
+
+                            <span class="type-label">
+                                이미지
+                            </span>
+
+                            <h2>이미지 선택</h2>
+
+                            <p>
+                                사진 속 얼굴, 전신, 차량 번호판 등을<br>
+                                자동으로 모자이크 처리합니다.
+                            </p>
+
+                            <small>
+                                JPG, PNG, WEBP 등
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <button class="start-btn blue">
+                        <span>→</span>
+                        시작하기
+                    </button>
+
+                </div>
+
+
+                <!-- 동영상 -->
+                <div class="service-card video-card">
+                    <div class="service-content">
+
+                        <div class="media-icon video-icon">
+                            <img src="assets/state/img/video.png" alt="동영상">
+                            <b class="v">+</b>
+                        </div>
+
+                        <div class="service-info">
+
+                            <span class="type-label">
+                                동영상
+                            </span>
+
+                            <h2>동영상 선택</h2>
+
+                            <p>
+                                영상 속 얼굴, 전신, 차량 번호판 등을<br>
+                                자동으로 모자이크 처리합니다.
+                            </p>
+
+                            <small>
+                                MP4, AVI, MOV 등
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <button class="start-btn purple">
+                        <span>→</span>
+                        시작하기
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 최근 사용 기록 -->
+    <section class="history">
+
+        <div class="history-header">
+
+            <div class="history-title">
+
+                <div class="clock">
+                    <img src="assets/state/img/clock.svg" alt="시계">
+                </div>
+
+                <div>
+                    <h2>최근 사용 기록</h2>
+                    <p>최근 5개의 사용 이력이 표시됩니다.</p>
+                </div>
+
+            </div>
+
+            <a href="#" class="more">
+                더보기 →
+            </a>
+
+        </div>
+
+
+        <!-- 테이블 -->
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>파일명</th>
+                        <th>파일 타입</th>
+                        <th>작업 날짜</th>
+                        <th>비식별화 상태</th>
+                        <th>상세보기</th>
+                    </tr>
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            <div class="file-name">
+                                <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=150">
+                                <span>
+                                    지능형관제를 통한 안전한 거리-2026-08-24.png
+                                </span>
+                            </div>
+                        </td>
+
+                        <td>
+                            <span class="file-type image">
+                                🖼 이미지
+                            </span>
+                        </td>
+
+                        <td class="date">
+                            2026.08.24 10:42
+                        </td>
+
+                        <td>
+                            <div class="status-box">
+                                <span class="status">
+                                    ✓ 비식별화 완료
+                                </span>
+                                <small>복원 불가</small>
+                            </div>
+                        </td>
+
+                        <td>
+                            <button class="detail-btn">
+                                상세보기 →
+                            </button>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            <div class="file-name">
+                                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=150">
+                                <span>
+                                    Real_Input_02-2026-08-22.jpeg
+                                </span>
+                            </div>
+                        </td>
+
+                        <td>
+                            <span class="file-type image">
+                                🖼 이미지
+                            </span>
+                        </td>
+
+                        <td class="date">
+                            2026.08.22 16:37
+                        </td>
+
+                        <td>
+                            <div class="status-box">
+                                <span class="status">
+                                    ✓ 비식별화 완료
+                                </span>
+                                <small>복원 불가</small>
+                            </div>
+                        </td>
+
+                        <td>
+                            <button class="detail-btn">
+                                상세보기 →
+                            </button>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            <div class="file-name">
+                                <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?w=150">
+                                <span>
+                                    Real_Input_03-2026-08-22.jpeg
+                                </span>
+                            </div>
+                        </td>
+
+                        <td>
+                            <span class="file-type image">
+                                🖼 이미지
+                            </span>
+                        </td>
+
+                        <td class="date">
+                            2026.08.22 16:21
+                        </td>
+
+                        <td>
+                            <div class="status-box">
+                                <span class="status">
+                                    ✓ 비식별화 완료
+                                </span>
+                                <small>복원 불가</small>
+                            </div>
+                        </td>
+
+                        <td>
+                            <button class="detail-btn">
+                                상세보기 →
+                            </button>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            <div class="file-name">
+                                <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?w=150">
+                                <span>
+                                    흡연부스 쓰레짐-2026-08-22.avi
+                                </span>
+                            </div>
+                        </td>
+
+                        <td>
+                            <span class="file-type video">
+                                ▣ 동영상
+                            </span>
+                        </td>
+
+                        <td class="date">
+                            2026.08.22 14:53
+                        </td>
+
+                        <td>
+                            <div class="status-box">
+                                <span class="status">
+                                    ✓ 비식별화 완료
+                                </span>
+                                <small>복원 불가</small>
+                            </div>
+                        </td>
+
+                        <td>
+                            <button class="detail-btn">
+                                상세보기 →
+                            </button>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            <div class="file-name">
+                                <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=150">
+                                <span>
+                                    Yeosu2-2026-08-20.jpeg
+                                </span>
+                            </div>
+                        </td>
+
+                        <td>
+                            <span class="file-type image">
+                                🖼 이미지
+                            </span>
+                        </td>
+
+                        <td class="date">
+                            2026.08.20 11:32
+                        </td>
+
+                        <td>
+                            <div class="status-box">
+                                <span class="status">
+                                    ✓ 비식별화 완료
+                                </span>
+                                <small>복원 불가</small>
+                            </div>
+                        </td>
+
+                        <td>
+                            <button class="detail-btn">
+                                상세보기 →
+                            </button>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+</main>
+
 </body>
 </html>
